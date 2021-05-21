@@ -1,4 +1,4 @@
-package com.lizhi.netty.example.NIO;
+package com.lizhi.netty.example.nio;
 
 
 import java.io.IOException;

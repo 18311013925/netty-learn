@@ -1,7 +1,6 @@
-package com.lizhi.netty.example.NIO;
+package com.lizhi.netty.example.nio;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.channels.FileChannel;

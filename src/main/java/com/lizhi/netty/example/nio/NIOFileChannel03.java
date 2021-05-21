@@ -1,6 +1,4 @@
-package com.lizhi.netty.example.NIO;
-
-import io.netty.buffer.ByteBuf;
+package com.lizhi.netty.example.nio;
 
 import java.io.*;
 import java.nio.ByteBuffer;

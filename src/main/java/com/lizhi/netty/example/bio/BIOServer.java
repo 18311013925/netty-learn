@@ -1,4 +1,4 @@
-package com.lizhi.netty.example.BIO;
+package com.lizhi.netty.example.bio;
 
 import java.io.IOException;
 import java.io.InputStream;

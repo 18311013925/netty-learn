@@ -1,6 +1,5 @@
-package com.lizhi.netty.example.NIO;
+package com.lizhi.netty.example.nio;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.nio.MappedByteBuffer;
