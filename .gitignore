@@ -32,3 +32,4 @@ src/test/
 target/generated-sources/
 idea/*.xml
 target/classes/*
+out/*
