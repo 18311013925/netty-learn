@@ -13,7 +13,7 @@ import io.netty.channel.socket.nio.NioSocketChannel;
  * @date: 2021/5/25 16:06
  */
 public class NettyClient {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         EventLoopGroup group = new NioEventLoopGroup();
 
         try {
@@ -30,14 +30,11 @@ public class NettyClient {
             System.out.println("客户端 ok..");
             //启动客户端去连接服务器端
             //关于 ChannelFuture 要分析，涉及到netty的异步模型
-            ChannelFuture channelFuture = bootstrap.bind("127.0.0.1", 6668).sync();
+            ChannelFuture channelFuture = bootstrap.connect("127.0.0.1", 6668).sync();
 
             //对关闭通道事件  进行监听
             channelFuture.channel().closeFuture().sync();
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }finally {
+        } finally {
             group.shutdownGracefully();
         }
     }
